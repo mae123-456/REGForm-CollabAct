@@ -10,8 +10,6 @@
      <h1>Registration Form</h1>
     <p>Please fill out this form with the required information</p>
     
-    <form onsubmit="return validateForm()" method="POST" action="login.php"></form>
-    
     <label>Firstname</label>
     <input type="text" id="firstname" name="firstname" required/>
 
@@ -19,7 +17,7 @@
     <input type="text" id="lastname" name="lastname" required/>
 
      <label>Email</label>
-    <input type="text" id="email" name="email" required/>
+    <input type="email" id="email" name="email" required/>
 
     <label>Password</label>
     <input type="password" id="password" name="password" required/>
@@ -43,14 +41,13 @@
         </select>
 
     <input type="checkbox" id="terms" name="terms">
-        <label for="terms">I accept the terms and conditions</label>
+        <label for="terms">I accept the <a href="#">terms and conditions</a></label>
 
     <p class="note">The school ensures data protection by adhering to relevant privacy laws,
         applying encryption, and requiring informed consent before any external sharing.</p>
 
-    <label for="profilePic"><strong>Upload a profile picture:</strong></label>
-        <div class="upload-btn">Choose File</div>
-        <p class="note">No file selected</p>
+    <label for="profile">Upload a profile picture:</label>
+    <input type="file" id="profile" name="profile">
 
     <label for="birthdate">Birthdate:</label>
         <input type="date" id="birthdate" name="birthdate">
@@ -75,6 +72,7 @@
 </body>
 
 </html>
+
 
 
 
