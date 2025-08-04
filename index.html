@@ -52,11 +52,6 @@
       color: white;
       border-radius: 5px;
     }
-
-    input[type="checkbox"] {
-      margin-right: 5px;
-    }
-
     a {
       color: #00ccff;
       text-decoration: none;
@@ -99,13 +94,13 @@
 </head>
 <body>
     <form>
-     <h1>Registration Form</h1>
+     <h2>Registration Form</h2>
     <p>Please fill out this form with the required information</p>
     
-    <label>Firstname</label>
+    <label>First Name</label>
     <input type="text" id="firstname" name="firstname" required/>
 
-     <label>lastname</label>
+     <label>Last Name</label>
     <input type="text" id="lastname" name="lastname" required/>
 
      <label>Email</label>
@@ -113,7 +108,7 @@
 
     <label>Password</label>
     <input type="password" id="password" name="password" required/>
-
+    <hr>
     
    <label for="program">Program</label>
     <select id="program" name="program">
@@ -137,7 +132,7 @@
 
     <p>The school ensures data protection by adhering to relevant privacy laws,
         applying encryption, and requiring informed consent before any external sharing.</p>
-
+   <hr>
     <label for="profile">Upload a profile picture:</label>
     <input type="file" id="profile" name="profile">
 
@@ -152,14 +147,15 @@
             <option value="data">Data Science</option>
         </select>
         
-    <p><label for="biotext">Bio:</label></p>
-    <textarea id="biotext"name="biotext"rows="4" cols="50">I take coding on the location.</textarea>
+    <label for="biotext">Bio:</label>
+    <textarea id="biotext"name="biotext"rows="4" placeholder="i like cooling on the beach..."></textarea>
     
     <button type="submit">SUBMIT</button>
     </form>
 </body>
 
 </html>
+
 
 
 
