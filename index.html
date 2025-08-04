@@ -43,11 +43,37 @@
 
     <input type="checkbox" id="terms" name="terms">
         <label for="terms">I accept the terms and conditions</label>
+
+    <p class="note">The school ensures data protection by adhering to relevant privacy laws,
+        applying encryption, and requiring informed consent before any external sharing.</p>
+
+    <label for="profilePic"><strong>Upload a profile picture:</strong></label>
+        <div class="upload-btn">Choose File</div>
+        <p class="note">No file selected</p>
+
+    <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate">
+        <p class="note">dd/mm/yyyy</p>
+    
+    <label for="specialization">Specialization?</label>
+        <select id="specialization" name="specialization">
+            <option value="">Select one</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="web">Web Development</option>
+            <option value="data">Data Science</option>
+        </select>
+
+    <input type="checkbox" id="codingLocation" name="codingLocation">
+        <label for="codingLocation">I take coding on the location.</label>
+
+    <label>Bio:</label>
+    <textarea id="biotext"name="biotext">I take coding on the location.</textarea>
     
     <button type="submit">login</button>
 </body>
 
 </html>
+
 
 
 
